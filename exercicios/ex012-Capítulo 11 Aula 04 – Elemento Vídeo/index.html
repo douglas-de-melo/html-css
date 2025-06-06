@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos em HTML5</h1>
+    <h2>Vídeos de Hospedagem Local</h2>
+    <p>Este video esta hospedado no meu próprio servidor.</p>
+
+    <video controls width="600px" poster="imagens/stokcar-capa.jpg">
+        <source src="midia/stokcar-video01.mp4" type="video/mp4">
+        <source src="midia/Stokcar-Video.mkv" type="video/mkv">
+        <source src="midia/Stokcar-Video.webm" type="video/webm">
+        <p>Seu navegador não possui compatibilidade</p>
+    </video>
+    <hr>
+    <h2>Vídeos de Hospedagem Externa</h2>
+    <p>Video do YouTube</p>
+    <iframe width="600" height="315" src="https://www.youtube.com/embed/_bkX5VkZg8U?si=5afX7jTMSTzf73X_&amp;start=13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <hr>
+    <p>Video do Vimeo</p>
+    <div style="padding:50% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/22913309?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" rameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width: 600px;;height:315px;;" title="RALLY 120FPS"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+</body>
+</html>
