@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuste de imagen de fundo</title>
+
+    <style>
+        body{
+            height: 100vh;
+            background-color: black;
+            background-image: url(img/wallpaper002.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover; 
+            /*
+            background-size
+                auto: 
+                    Mantém o tamanho original da imagem.
+                    Não estica nem corta.
+                    Pode acabar repetindo (background-repeat) se a imagem for menor que o elemento.
+                cover:
+                    Faz a imagem cobrir todo o elemento.
+                    Mantém a proporção original, mas pode cortar partes para preencher todo o espaço.
+                    Não deixa sobrar espaço vazio.
+                contain:
+                    Faz a imagem caber inteira dentro do elemento.
+                    Mantém a proporção original, mas pode deixar espaços vazios (borda ou faixa de cor de fundo) se as proporções forem diferentes.
+            */
+        }
+        main{
+            background-color: white;
+            width: 400px;
+            border: 3px solid blue;
+            border-radius: 15px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi nesciunt quisquam, obcaecati accusantium repudiandae, delectus dolorem molestias perspiciatis neque quis sequi culpa vitae? Maiores consequatur debitis neque id quia tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aliquam nihil, odit repellat voluptatem placeat at in quia consectetur ipsum id, ea vel omnis porro, obcaecati itaque voluptatum aspernatur adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et molestiae, reiciendis provident commodi, temporibus mollitia praesentium debitis voluptate ea illo impedit recusandae earum, dignissimos eaque exercitationem quod. Molestiae, esse rem.
+        </p>
+    </main>
+</body>
+</html>
