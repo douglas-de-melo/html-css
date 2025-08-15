@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+
+    <style>
+        #contain{
+            background-image: url(img/target001.png);
+            background-size: 100% 100%;
+
+            height: 98vh;
+            background-color: red;
+
+            position: relative;
+            /*
+                position relative:
+                    Faz o elemento ser referência para posicionamento absoluto dos filhos.
+                    Sem isso, se você usar position: absolute dentro dele, o filho seria posicionado em relação à página inteira.
+            */
+            
+        }
+
+        #conteudo{
+            background-image: url(img/target001.png);
+            background-size: 100% 100%;
+
+            background-color: white;
+            width: 500px;
+            height: 300px;
+
+            position: absolute;
+            /*
+                position: absolute;
+                    Permite posicionar o elemento em qualquer ponto do pai (#contain) usando top, left, etc.
+                    Como o pai (#contain) tem position: relative, esse elemento será posicionado relativo ao pai, não à tela inteira.
+            */
+
+            left: 50%;
+            top: 50%;
+            /*
+                left: 50%; e top: 50%;
+                    Move o canto superior esquerdo do elemento para o meio do pai.
+                    Só que isso sozinho posiciona o canto, não o centro do elemento.
+            */
+
+           transform: translate(-50%, -50%);
+            /*
+                transform: translate(-50%, -50%);
+                    Compensa o deslocamento do canto superior esquerdo.
+                    Move o elemento para cima e para a esquerda metade da largura e altura dele, centralizando exatamente no pai.
+            */
+        }
+    </style>
+
+</head>
+<body>
+    <section id="contain">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
