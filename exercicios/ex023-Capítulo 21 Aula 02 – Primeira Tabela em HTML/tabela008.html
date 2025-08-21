@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="doug.ico" type="image/x-icon">
+    <title>Tabela 008</title>
+</head>
+<body>
+    
+</body>
+</html>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #555;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .idade{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Agrupando Colunas</h1>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="sexo">
+            <col class="idade">
+            <col class="prof">
+        </colgroup>
+        <!--
+            colgroup:
+             é usada dentro de uma <table> para agrupar colunas e aplicar estilos a elas de forma mais organizada. Geralmente é usada junto com a tag <col>.
+                
+                <colgroup> → define o agrupamento das colunas.
+
+                <col> → representa cada coluna (ou um conjunto delas, usando span).
+
+                span="2" → significa que o estilo será aplicado a 2 colunas seguidas.
+
+                tyle → pode aplicar cor de fundo, largura etc.
+        -->
+        <caption>Cadastro</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Souza</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Designer</td>
+        </tr>
+        <tr>
+            <td>João Pereira</td>
+            <td>M</td>
+            <td>32</td>
+            <td>Engenheiro</td>
+        </tr>
+        <tr>
+            <td>Maria Lima</td>
+            <td>F</td>
+            <td>28</td>
+            <td>Advogada</td>
+        </tr>
+        <tr>
+            <td>Lucas Martins</td>
+            <td>M</td>
+            <td>41</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Fernanda Alves</td>
+            <td>F</td>
+            <td>30</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Rafael Gomes</td>
+            <td>M</td>
+            <td>27</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Juliana Costa</td>
+            <td>F</td>
+            <td>35</td>
+            <td>Arquiteta</td>
+        </tr>
+        <tr>
+            <td>Eduardo Silva</td>
+            <td>M</td>
+            <td>38</td>
+            <td>Analista de Sistemas</td>
+        </tr>
+        <tr>
+            <td>Patrícia Ramos</td>
+            <td>F</td>
+            <td>29</td>
+            <td>Psicóloga</td>
+        </tr>
+        <tr>
+            <td>Thiago Rocha</td>
+            <td>M</td>
+            <td>33</td>
+            <td>Administrador</td>
+        </tr>
+        <tr>
+            <td>Camila Dias</td>
+            <td>F</td>
+            <td>24</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Marcelo Oliveira</td>
+            <td>M</td>
+            <td>45</td>
+            <td>Motorista</td>
+        </tr>
+    
+    </table>
+</body>
+</html>
