@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="doug.ico" type="image/x-icon">
+    <title>Estuodos de Iframe</title>
+
+    <style>
+        iframe{
+            width: 400px;
+            height: 400px;
+            border: 5PX dashed blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Testando o uso de iframe
+    </h1>
+
+    <!--
+        Tamanho padrão do iframe: 300 x 150 px
+
+        As cofigurações de CSS são sobreanas as cofigurações no html
+
+        scolling:
+        auto = deixa a barra de rola automatica "padrão"
+        yes = Acresenta a barra de rolagem independente do tamanho do conteúdo
+        no = remove a barra de rolagem independente do tamanho do conteúdo
+            obs: Não funciona em todos os navegadores!!
+
+        frameborder: 0 ou 1 = independento do valor acima de zero a borda por padrão sera de 1px,
+                              para pesonalizar usar as CSS.  
+    -->
+    <p>
+        acessando o site do
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="700px" scolling="no">
+            do <a href="https://www.cursoemvideo.com" target="_blank">Curso em Video</a>
+        </iframe> 
+        para aprender a programar
+    </p>
+    <p>
+        acessando o site do  
+        <iframe src="https://www.google.com" frameborder="0">
+            <a href="https://www.google.com" target="_blank">Google</a>
+        </iframe>
+        <br>
+        OBS: Alguns sites tem proteção contra ifreame poara sites de terceiros
+    </p>
+    <p>
+        Portifollio Douglas de Melo
+        <iframe src="https://www.douglasdeveloper.com" frameborder="0">
+            <a href="https://www.douglasdeveloper.com" target="_blank"></a>
+        </iframe>
+    </p>
+</body>
+</html>
