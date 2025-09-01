@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="doug.ico" type="image/x-icon">
+    <title>Iframes mais seguros</title>
+</head>
+<body>
+    <h1>
+        Site Principal
+    </h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus recusandae quia, quibusdam deleniti fugit eos impedit debitis, rem odit amet tenetur, totam ex laboriosam? Repudiandae quas ratione eos voluptas similique?
+        Voluptatum adipisci incidunt quas ipsum magni repellendus eos recusandae amet sint magnam, consequuntur labore quis beatae ex quaerat odit vero ipsa ad mollitia maiores! Voluptatibus fugiat nulla magni distinctio nihil?
+    </p>
+    <!--
+        -> sandbox:
+            Bloqueia scripts
+
+            Bloqueia envio de formulários
+
+            Bloqueia pop-ups
+
+            Impede que a página mude o top (navegar a guia atual)
+
+            Força unique origin (não tem acesso a cookies/localStorage, mesmo se for do mesmo domínio)
+
+            -> referrerpolicy
+
+                no-referrer: Não envia nenhum cabeçalho Referer.
+
+                no-referrer-when-downgrade (padrão na maioria dos navegadores): Envia o Referer normalmente, exceto se for de HTTPS → HTTP (downgrade).
+
+                origin: Só envia o domínio de origem (sem caminho, query ou hash). Ex.: https://meusite.com/
+
+                origin-when-cross-origin: Envia a URL completa para o mesmo domínio, mas apenas o domínio (origin) quando for para outro site.
+
+                same-origin: Só envia Referer se for a mesma origem. Para sites externos não envia nada.
+
+                strict-origin: Só envia a origin em navegação segura (HTTPS → HTTPS). Se for para HTTP, não envia nada.
+
+                strict-origin-when-cross-origin (novo padrão em vários navegadores): URL completa para o mesmo site; só a origin para outro site se for HTTPS → HTTPS; nada se for HTTPS → HTTP.
+
+                unsafe-url: Sempre envia a URL completa, mesmo cruzando sites e mesmo HTTPS → HTTP (não recomendado por segurança).
+
+        -> “permissões” específicas:
+
+            allow-scripts — permite rodar JS (continua sem acesso a cookies/localStorage se não tiver allow-same-origin)
+
+            allow-same-origin — mantém a “origem” real (permite cookies/localStorage/XHR). Cuidado: combinar com allow-scripts reduz bastante o isolamento.
+
+            allow-forms — permite enviar formulários
+
+            allow-popups — permite abrir novas janelas/abas
+
+            allow-popups-to-escape-sandbox — popups podem navegar fora do sandbox
+
+            allow-modals — permite alert/prompt/confirm
+
+            allow-top-navigation-by-user-activation — permite a página dentro do iframe navegar o top apenas após interação do usuário (clique, etc.)
+
+            (Opcional em alguns navegadores) allow-downloads — permite downloads iniciados pelo iframe
+    -->
+    <iframe src="paginas-extras/pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        Seu navegador não é compativel!!!!
+    </iframe>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat molestias, tempore adipisci quo, veritatis mollitia, nihil quos impedit vitae ratione nostrum tenetur vero iste! Tempora aut in quisquam facere eos.
+        Nostrum mollitia, voluptatem dolores quidem odit facilis aperiam? Nam neque porro praesentium sapiente deserunt earum harum soluta temporibus veniam, necessitatibus delectus repudiandae sequi debitis veritatis aspernatur nobis ipsam repellat rerum.
+        Maiores eius ipsam voluptatibus quam voluptas quos distinctio qui quibusdam natus amet dolore, ut consequatur. Beatae quasi nisi in, a officiis corrupti animi quia molestias aut quaerat cupiditate praesentium omnis!
+    </p>
+</body>
+</html>
