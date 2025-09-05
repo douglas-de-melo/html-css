@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="doug.ico" type="image/x-icon">
+    <title>Formulario 001</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Primeiro Formulario
+    </h1>
+    
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="Sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+    <!--
+        action:
+            O atributo action em um formulário HTML define para onde (qual URL ou recurso) os dados do formulário serão enviados quando o usuário clicar em Submit (<input type="submit"> ou <button type="submit">).
+
+        Autocomplete:
+            O atributo autocomplete em formulários HTML é usado para dizer ao navegador se ele deve ou não sugerir e preencher automaticamente valores que o usuário já digitou anteriormente em campos de formulário.
+
+        Label:
+            O elemento <label> no HTML é usado para associar um texto descritivo a um campo de formulário (<input>, <textarea>, <select>, etc.).
+            Ele melhora a usabilidade (facilita o clique no campo) e a acessibilidade (leitores de tela conseguem relacionar a descrição ao campo).    
+            
+        Method:
+            get:
+                Os dados são enviados pela URL (ex.: processa.php?nome=Douglas).
+                Bom para pesquisas e filtros, onde os dados podem ficar visíveis e até compartilhados por link.
+                Tem limite de tamanho (dependendo do navegador/servidor).
+                Menos seguro → dados ficam expostos na barra de endereço. 
+            Post:
+                Os dados são enviados no corpo da requisição HTTP (não aparecem na URL).
+                Mais seguro que GET (mas ainda precisa de HTTPS para proteção real).
+                Não tem limite prático de tamanho.
+                Usado para cadastros, logins, envio de formulários grandes.
+    -->
+</body>
+</html>
