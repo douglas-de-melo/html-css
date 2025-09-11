@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="doug.ico" type="image/x-icon">
+    <title>Formulário 005</title>
+</head>
+<body>
+    <h1>
+        Testes com formulários
+    </h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>
+                sexo
+            </legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label><br>
+            <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label>
+            <!--
+                radio:
+                    name = usar o mesmo nome
+                    id = diferente
+                Para que funcione perfeitamente!
+            -->
+        </fieldset>
+        <fieldset>
+            <legend>
+                Esportes Favoritos
+            </legend>
+            <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label><br>
+            <input type="checkbox" name="bas" id="ibas"><label for="ibas">Basquete</label><br>
+            <input type="checkbox" name="dri" id="idri"> <label for="idri">Drift</label><br>
+            <input type="checkbox" name="stock" id="istock"> <label for="istock">StockCar</label><br>
+            <input type="checkbox" name="arr" id="iarr"><label for="iarr">Arrancada</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

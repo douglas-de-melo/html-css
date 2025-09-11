@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="doug.ico" type="image/x-icon">
+    <title>Formulário 006</title>
+</head>
+<body>
+    <h1>
+        Testes de Formulários
+    </h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor"><br>
+        </p>
+
+        <p>
+            <label for="iniv">Nivel de Satisfação</label>
+            <input type="range" name="niv" id="iniv" min="1" max="10" value="1">
+        </p>
+        <p>
+            <label for="ifoto">Foto do Perfil: </label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        <!--
+            Obs: 
+                1- Testar em diversos navegadores pois nem sempre os formulários sao compatíveis
+                2- Sempre que usar input para envio de arquivos deixar o form com method 'POST' 
+
+        -->
+    </form>
+</body>
+</html>
