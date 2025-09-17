@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="doug.ico" type="image/x-icon">
+    <title>Formulário 008</title>
+</head>
+<body>
+    <h1>
+        Testes de Formulários
+    </h1>
+    <form action="" method="get" autocomplete="">
+        <p>
+            <label for="inum1">Número 1:</label>
+            <input type="number" name="num1" id="inum1" min="0" max="50" required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </p>
+
+        <p>
+            <label for="inum2">Número 2: </label>
+            <input type="number" name="num2" id="inum2" min="0" max="50" required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </p>
+        <p>
+            <label for="isoma">Soma: </label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+        <!--
+            Output:
+                O elemento <output> em HTML é usado para mostrar o resultado de um cálculo ou de uma ação do usuário em formulários. Ele é geralmente atualizado com JavaScript.
+
+            O que acontece nesse exemplo:
+                Os inputs (num1 e num2) recebem números.
+                O atributo oninput recalcula o valor toda vez que o usuário digita.
+                O <output> exibe o resultado da soma.
+
+            Principais atributos do <output>: 
+                - name → nome para identificar o resultado      
+                        (pode ser enviado no formulário).
+                - for → indica quais elementos de entrada estão relacionados 
+                        com esse resultado.
+                - id → permite manipular o output com JavaScript.       
+        -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
