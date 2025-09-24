@@ -5,19 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="shortcut icon" href="../doug.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="estilos/tela.css" media="screen">
     <link rel="stylesheet" href="estilos/impressoras.css" media="print">
+    
 </head>
 <!--
-    Media Queries são recursos do CSS que permitem aplicar estilos diferentes dependendo das características do dispositivo, como largura da tela, altura, orientação (retrato ou paisagem), resolução etc.
-    👉  Elas são fundamentais para o design responsivo, ou seja, quando o site se adapta a celulares, tablets e desktops.
+    Em CSS e HTML, quando falamos em media types (tipos de mídia), estamos nos referindo a classificações que indicam para qual tipo de dispositivo ou meio de saída as regras de estilo devem ser aplicadas.
+        São usados geralmente em @media queries ou no atributo media da tag <link>.
 
-    No CSS, você pode aplicar estilos diferentes dependendo do meio em que o conteúdo será exibido. Os dois mais comuns são:
-            screen → telas (monitores, celulares, tablets etc.)
-            print → impressoras (visualização e impressão de página)
-    Quando usar?
-            screen → design responsivo (desktop, tablet, celular).
-            print → preparar a página para impressão (remover fundos, esconder menus, ajustar tamanho da fonte, mostrar links completos etc.).
+        📌 Principais Media Types
+
+            1- all
+                Padrão, usado para todos os tipos de mídia.
+                Ex.: @media all { ... }
+
+            2- screen
+                Destinado a telas de computadores, tablets, celulares, smart TVs.
+                Ex.: @media screen and (max-width: 768px) { ... }
+
+            3- print
+                Usado quando o conteúdo será impresso ou visualizado em modo de impressão (Ctrl + P no navegador).
+                Ex.: @media print { body { font-size: 12pt; } }
+
+            4- speech
+                Para sintetizadores de voz (screen readers que falam o conteúdo da página).
+                Ex.: @media speech { ... }
 -->
 <body>
     <header>
